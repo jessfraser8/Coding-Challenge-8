@@ -22,11 +22,13 @@ document.getElementById("registrationForm").addEventListener("submit",(event)=>{
         alert("Please fill out all fields before submitting.")
     } else {
         //Display submitted feedback if submitted correctly.
+        //Add formatting to displyed text.
         document.getElementById("registrationSummary").innerHTML =`
-        Name: ${name}<p>
-        Email: ${email}<p>
-        Date: ${date}<p>
-        Meal preference: ${meal}
+        <h3>Registration Details:</h3>
+       <strong>Name:</strong> ${name}<p>
+       <strong>Email:</strong> ${email}<p>
+       <strong>Date:</strong> ${date}<p>
+       <strong> Meal preference:</strong> ${meal}
         `
     };
 
